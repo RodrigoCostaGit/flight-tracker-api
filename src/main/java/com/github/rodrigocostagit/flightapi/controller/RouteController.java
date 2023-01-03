@@ -2,10 +2,7 @@ package com.github.rodrigocostagit.flightapi.controller;
 
 import com.github.rodrigocostagit.flightapi.model.Route;
 import com.github.rodrigocostagit.flightapi.model.RouteRepository;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -18,14 +15,20 @@ public class RouteController {
     }
 
     @GetMapping("/route")
-    List<Route> all(){
+    public List<Route> all(){
         return repository.findAll();
     }
 
     @PostMapping("/route")
-    Route addRoute(@RequestBody Route route){
+    public Route addRoute(@RequestBody Route route){
         return repository.save(addRoute(route));
     }
+
+    @GetMapping("/")
+    public @ResponseBody String Greetings(){
+        return "flight Route tracker API";
+    }
+
 
 
 }

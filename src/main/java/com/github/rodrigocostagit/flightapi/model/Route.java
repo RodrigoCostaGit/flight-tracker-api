@@ -1,4 +1,4 @@
-    package com.github.rodrigocostagit.flightapi.model;
+package com.github.rodrigocostagit.flightapi.model;
 
 import jakarta.persistence.*;
 
