@@ -4,6 +4,8 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 .mvn
+src/main/resources/application.properties
+src/main/java/com/github/rodrigocostagit/flightapi/LoadData.java
 
 ### STS ###
 .apt_generated
