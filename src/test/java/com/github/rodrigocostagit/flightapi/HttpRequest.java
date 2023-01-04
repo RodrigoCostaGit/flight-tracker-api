@@ -13,6 +13,7 @@ public class HttpRequest {
     @Value(value="${local.server.port}")
     private int port;
 
+
      @Autowired
     private TestRestTemplate restTemplate;
      @Test

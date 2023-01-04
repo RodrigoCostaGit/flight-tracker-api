@@ -5,7 +5,7 @@ import com.github.rodrigocostagit.flightapi.model.Route;
 public class AppController {
 
     public void AddRoute(String code,String origin, String Destination){
-        Route route = new Route("testeCode","testeOrigin","testeDestinaton");
+        Route route = new Route();
 
 
     }
